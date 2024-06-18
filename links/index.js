@@ -5,7 +5,7 @@ window.onload = function(){
 function complete(){
     var send = true;
     const userName = prompt('你的名字：');
-    if(userName=""){send=false;alert('请实名！刚刚已经收到乱填的情况！')}
+    if(userName==""){send=false;alert('请实名！刚刚已经收到乱填的情况！')}
     var ans = [];
     const ans1 = checkItems('whetherCome');
     const ans2 = document.getElementById('q2_ans1');
