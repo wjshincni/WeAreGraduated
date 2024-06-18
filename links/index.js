@@ -1,5 +1,10 @@
+window.onload = function(){
+    alert('请注意！这是班级活动！需要实名！调查问卷不是捣乱的地方！不是叫学生自己出钱！不要填0块甚至负数的！IP在后台都看得到，不填名字也能和地址对上！')
+}
+
 function complete(){
     const userName = prompt('你的名字：');
+    if(!userName.value){send=false;alert('请实名！刚刚已经收到乱填的情况！')}
     var send = true;
     var ans = [];
     const ans1 = checkItems('whetherCome');
@@ -40,6 +45,7 @@ function complete(){
                 restype: '0'
             }
         )
+        alert("提交成功！请勿再次提交！");
     }
 }
 
