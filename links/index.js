@@ -4,8 +4,7 @@ window.onload = function(){
 
 function complete(){
     var send = true;
-    const userName = prompt('你的名字：');
-    if(userName==""){send=false;alert('请实名！刚刚已经收到乱填的情况！')}
+    const userName = prompt('你的名字：','你的名字');
     var ans = [];
     const ans1 = checkItems('whetherCome');
     const ans2 = document.getElementById('q2_ans1');
@@ -38,7 +37,6 @@ function complete(){
     }
     if (send){
         ans.push(ans5.value);
-        /*
         $.post('https://apis.tianapi.com/robot/index',
             {
                 key: '868ffe977d3b445b541e7e28acb51e41',
@@ -46,7 +44,6 @@ function complete(){
                 restype: '0'
             }
         )
-        */
         alert("提交成功！如果再次提交则以最后一次提交为准！");
     }
 }
