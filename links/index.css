@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    text-align: center;
+    background-color: bisque;
+}
+
+h1,h3{
+    text-shadow: 5px 5px 20px white;
+}
+
+h2{
+    text-shadow: 10px 10px 10px white;
+    color: palevioletred;
+}
+
+input{
+    display: inline-block;
+}
+
+button{
+    border-radius: 10px;
+    background-color: cadetblue;
+    color: white;
+    width: 4rem;
+    height: 2rem;
+}
+
+input[type=radio]{
+    width: 1rem;
+    height: 1rem;
+}
+
+.questions{
+    display: block;
+    color: cadetblue;
+    font-size: 1.5rem;
+}
